@@ -19,6 +19,7 @@ class MainController extends BaseController
     {
         $data['user_categ'] = $this->main_categ->findAll();
         $data['user_prod'] = $this->main_prod->findAll();
+
         return view('home', $data);
     }
     public function prod($category)
@@ -31,5 +32,38 @@ class MainController extends BaseController
         ];
 
         return view('products_list', $data);
+    }
+    public function item($id)
+    {
+
+        $item = $this->main_prod->find($id);
+
+        $item['item'] = $item;
+
+        return view('item', $item);
+    }
+    public function add()
+    {
+        $data['user_categ'] = $this->main_categ->findAll();
+        return view('add', $data);
+    }
+    public function save()
+    {
+        $data = [
+            'ProductID' => $this->request->getPost('ProductID'),
+            'ProductName' => $this->request->getPost('ProductName'),
+            'ProductDescription' => $this->request->getPost('ProductDescription'),
+            'ProductCategory' => $this->request->getPost('ProductCategory'),
+            'ProductQuantity' => $this->request->getPost('ProductQuantity'),
+            'ProductPrice' => $this->request->getPost('ProductPrice'),
+        ];
+        $this->main_prod->insert($data);
+
+        return redirect()->to('/');
+    }
+    public function delete($ProductID)
+    {
+        $this->main_prod->delete($ProductID);
+        return redirect()->to('/');
     }
 }

@@ -8,7 +8,7 @@ class ProdModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'table_products';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'ProductID';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
@@ -41,5 +41,9 @@ class ProdModel extends Model
     public function getProductsByCategory($category)
     {
         return $this->where('ProductCategory', $category)->findAll();
+    }
+    public function getProductById($id)
+    {
+        return $this->where('ProductID', $id)->first();
     }
 }
