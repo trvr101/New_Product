@@ -38,4 +38,8 @@ class ProdModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+    public function getProductsByCategory($category)
+    {
+        return $this->where('ProductCategory', $category)->findAll();
+    }
 }
