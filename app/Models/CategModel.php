@@ -8,7 +8,7 @@ class CategModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'table_category';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'ProductID';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;

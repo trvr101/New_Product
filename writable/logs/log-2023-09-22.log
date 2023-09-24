@@ -1,0 +1,84 @@
+ERROR - 2023-09-22 03:54:39 --> mysqli_sql_exception: Unknown column 'table_category.ProductID' in 'where clause' in C:\laragon\www\New_Product\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\New_Product\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\New_Product\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\New_Product\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\New_Product\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\New_Product\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\New_Product\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '9')
+#6 C:\laragon\www\New_Product\app\Controllers\MainController.php(72): CodeIgniter\BaseModel->find('9')
+#7 C:\laragon\www\New_Product\system\CodeIgniter.php(919): App\Controllers\MainController->update('9')
+#8 C:\laragon\www\New_Product\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\New_Product\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\New_Product\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\New_Product\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-09-22 03:54:40 --> Unknown column 'table_category.ProductID' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `table_category`
+WHERE `table_category`.`ProductID` = :table_category.ProductID:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '9')
+ 4 APPPATH\Controllers\MainController.php(72): CodeIgniter\BaseModel->find('9')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->update('9')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\New_Product\\public\\index.php')
+ERROR - 2023-09-22 06:24:35 --> mysqli_sql_exception: Unknown column 'table_category.ProductID' in 'where clause' in C:\laragon\www\New_Product\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\New_Product\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\New_Product\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\New_Product\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\New_Product\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\New_Product\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\New_Product\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '106')
+#6 C:\laragon\www\New_Product\app\Controllers\MainController.php(72): CodeIgniter\BaseModel->find('106')
+#7 C:\laragon\www\New_Product\system\CodeIgniter.php(919): App\Controllers\MainController->update('106')
+#8 C:\laragon\www\New_Product\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\New_Product\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\New_Product\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\New_Product\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-09-22 06:24:35 --> Unknown column 'table_category.ProductID' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `table_category`
+WHERE `table_category`.`ProductID` = :table_category.ProductID:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '106')
+ 4 APPPATH\Controllers\MainController.php(72): CodeIgniter\BaseModel->find('106')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->update('106')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\New_Product\\public\\index.php')
+ERROR - 2023-09-22 06:25:58 --> mysqli_sql_exception: Unknown column 'table_category.ProductID' in 'where clause' in C:\laragon\www\New_Product\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\New_Product\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\New_Product\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\New_Product\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\New_Product\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\New_Product\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\New_Product\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '7')
+#6 C:\laragon\www\New_Product\app\Controllers\MainController.php(72): CodeIgniter\BaseModel->find('7')
+#7 C:\laragon\www\New_Product\system\CodeIgniter.php(919): App\Controllers\MainController->update('7')
+#8 C:\laragon\www\New_Product\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\New_Product\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\New_Product\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\New_Product\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2023-09-22 06:25:58 --> Unknown column 'table_category.ProductID' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `table_category`
+WHERE `table_category`.`ProductID` = :table_category.ProductID:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '7')
+ 4 APPPATH\Controllers\MainController.php(72): CodeIgniter\BaseModel->find('7')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->update('7')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\New_Product\\public\\index.php')

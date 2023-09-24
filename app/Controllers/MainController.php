@@ -66,4 +66,27 @@ class MainController extends BaseController
         $this->main_prod->delete($ProductID);
         return redirect()->to('/');
     }
+    public function edit($ProductID)
+    {
+        $data['item'] = $this->main_prod->getProductById($ProductID); // Assuming getProductById is a method in ProdModel
+        $data['user_categ'] = $this->main_categ->findAll();
+        return view('update', $data);
+    }
+    public function update_save()
+    {
+        $data = [
+            'ProductName' => $this->request->getPost('ProductName'),
+            'ProductDescription' => $this->request->getPost('ProductDescription'),
+            'ProductCategory' => $this->request->getPost('ProductCategory'),
+            'ProductQuantity' => $this->request->getPost('ProductQuantity'),
+            'ProductPrice' => $this->request->getPost('ProductPrice'),
+        ];
+
+        $ProductID = $this->request->getPost('ProductID');
+
+        // Assuming `update` is a method in your ProdModel
+        $this->main_prod->update($ProductID, $data);
+
+        return redirect()->to('/');
+    }
 }
