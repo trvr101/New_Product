@@ -19,7 +19,7 @@
                     </div>
                     <div class="card-footer">
                         <a href="/edit/<?= $item['ProductID'] ?>" class="btn btn-outline-dark">Edit</a>
-                        <a href="/delete/<?= $item['ProductID'] ?>" class="btn btn-outline-dark">Delete</a>
+                        <a href="/delete/<?= $item['ProductID'] ?>" class="btn btn-outline-light">Delete</a>
                     </div>
                 </div>
             </div>
